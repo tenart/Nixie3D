@@ -1,0 +1,316 @@
+#front {
+    width: 1500px;
+    height: 500px;
+    position: absolute;
+    background: url(../img/front.png);
+    left: calc(50% - 750px);
+    top: calc(50% - 450px);
+    transform: translateZ(50px);
+    border-top: 200px solid #000000;
+    border-bottom: 200px solid #000000;
+}
+
+.nixie {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: calc(50% - 75px);
+    top: calc(50% - 75px);
+    border-radius: 999px;
+}
+
+.ray {
+    background: url(../img/ray.png) center center / 100% 100% no-repeat;
+    position: absolute;
+    height: 500px;
+    width: 1000px;
+    left: calc(50% - 500px);
+    top: calc(50% - 250px);
+    opacity: 0.2;
+}
+
+.r1 {
+    transform: rotateY(270deg) translateX(550px);
+}
+
+.r2 {
+    transform: rotateY(270deg) rotateX(90deg) translateX(550px);
+}
+
+.anode {
+    background: url(../img/anode.png) center center / 100% no-repeat;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.a1 {
+    transform: translateZ(30px);
+    opacity: 1;
+}
+
+.a2 {
+    transform: translateZ(-30px);
+    opacity: 0.5;
+    display: none;
+}
+
+.numbers_wrap {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    transform: translateZ(-13.5px);
+}
+
+.number {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background: center center / 100% no-repeat;
+    opacity: 1;
+    backface-visibility: hidden;
+}
+
+.glow {
+    opacity: 1;
+}
+
+._1 {
+    background-image: url(../img/1.png);
+    transform: translateZ(0px);
+}
+
+._0 {
+    background-image: url(../img/0.png);
+    transform: translateZ(3px);
+}
+
+._2 {
+    background-image: url(../img/2.png);
+    transform: translateZ(6px);
+}
+
+._9 {
+    background-image: url(../img/9.png);
+    transform: translateZ(9px);
+}
+
+._3 {
+    background-image: url(../img/3.png);
+    transform: translateZ(12px);
+}
+
+._4 {
+    background-image: url(../img/4.png);
+    transform: translateZ(15px);
+}
+
+._8 {
+    background-image: url(../img/8-lit.png);
+    transform: translateZ(18px);
+}
+
+._5 {
+    background-image: url(../img/5.png);
+    transform: translateZ(21px);
+}
+
+._7 {
+    background-image: url(../img/7.png);
+    transform: translateZ(24px);
+}
+
+._6 {
+    background-image: url(../img/6.png);
+    transform: translateZ(27px);
+}
+
+.tube_wrap {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    display: ;
+}
+
+.bottom {
+    background: radial-gradient( ellipse at center, #550300, black 70%);
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+    transform: translateZ(-50px);
+    backface-visibility: hidden;
+}
+
+/*
+.face {
+    width: 22px;
+    height: 100px;
+    background: linear-gradient(to top, black, #550300 45%, #550300 55%, black);
+    position: absolute;
+    backface-visibility: hidden;
+    top: 25px;
+    left: calc(50% - 11px);
+}
+
+.f1 {
+    transform: rotateX(270deg) translateZ(-75px);
+}
+
+.f2 {
+    transform: rotateX(270deg) rotateY(15deg) translateZ(-75px);
+}
+
+.f3 {
+    transform: rotateX(270deg) rotateY(30deg) translateZ(-75px);
+}
+
+.f4 {
+    transform: rotateX(270deg) rotateY(45deg) translateZ(-75px);
+}
+
+.f5 {
+    transform: rotateX(270deg) rotateY(60deg) translateZ(-75px);
+}
+
+.f6 {
+    transform: rotateX(270deg) rotateY(75deg) translateZ(-75px);
+}
+
+.f7 {
+    transform: rotateX(270deg) rotateY(90deg) translateZ(-75px);
+}
+
+.f8 {
+    transform: rotateX(270deg) rotateY(105deg) translateZ(-75px);
+}
+
+.f9 {
+    transform: rotateX(270deg) rotateY(120deg) translateZ(-75px);
+}
+
+.f10 {
+    transform: rotateX(270deg) rotateY(135deg) translateZ(-75px);
+}
+
+.f11 {
+    transform: rotateX(270deg) rotateY(150deg) translateZ(-75px);
+}
+
+.f12 {
+    transform: rotateX(270deg) rotateY(165deg) translateZ(-75px);
+}
+
+.f13 {
+    transform: rotateX(270deg) rotateY(180deg) translateZ(-75px);
+}
+
+.f14 {
+    transform: rotateX(270deg) rotateY(195deg) translateZ(-75px);
+}
+
+.f15 {
+    transform: rotateX(270deg) rotateY(210deg) translateZ(-75px);
+}
+
+.f16 {
+    transform: rotateX(270deg) rotateY(225deg) translateZ(-75px);
+}
+
+.f17 {
+    transform: rotateX(270deg) rotateY(240deg) translateZ(-75px);
+}
+
+.f18 {
+    transform: rotateX(270deg) rotateY(255deg) translateZ(-75px);
+}
+
+.f19 {
+    transform: rotateX(270deg) rotateY(270deg) translateZ(-75px);
+}
+
+.f20 {
+    transform: rotateX(270deg) rotateY(285deg) translateZ(-75px);
+}
+
+.f21 {
+    transform: rotateX(270deg) rotateY(300deg) translateZ(-75px);
+}
+
+.f22 {
+    transform: rotateX(270deg) rotateY(315deg) translateZ(-75px);
+}
+
+.f23 {
+    transform: rotateX(270deg) rotateY(330deg) translateZ(-75px);
+}
+
+.f24 {
+    transform: rotateX(270deg) rotateY(345deg) translateZ(-75px);
+}
+*/
+.face {
+    width: 40px;
+    height: 100px;
+    background: linear-gradient(to top, black, #550300 45%, #550300 55%, black);
+    position: absolute;
+    backface-visibility: hidden;
+    top: 25px;
+    left: calc(50% - 20px);
+}
+
+.f1 {
+    transform: rotateX(270deg) rotateY(15deg) translateZ(-72.4px);
+}
+
+.f2 {
+    transform: rotateX(270deg) rotateY(45deg) translateZ(-72.4px);
+}
+
+.f3 {
+    transform: rotateX(270deg) rotateY(75deg) translateZ(-72.4px);
+}
+
+.f4 {
+    transform: rotateX(270deg) rotateY(105deg) translateZ(-72.4px);
+}
+
+.f5 {
+    transform: rotateX(270deg) rotateY(135deg) translateZ(-72.4px);
+}
+
+.f6 {
+    transform: rotateX(270deg) rotateY(165deg) translateZ(-72.4px);
+}
+
+.f7 {
+    transform: rotateX(270deg) rotateY(195deg) translateZ(-72.4px);
+}
+
+.f8 {
+    transform: rotateX(270deg) rotateY(225deg) translateZ(-72.4px);
+}
+
+.f9 {
+    transform: rotateX(270deg) rotateY(255deg) translateZ(-72.4px);
+}
+
+.f10 {
+    transform: rotateX(270deg) rotateY(285deg) translateZ(-72.4px);
+}
+
+.f11 {
+    transform: rotateX(270deg) rotateY(315deg) translateZ(-72.4px);
+}
+
+.f12 {
+    transform: rotateX(270deg) rotateY(345deg) translateZ(-72.4px);
+}
+
+.f13, .f14, .f15, .f16, .f17, .f18, .f19, .f20, .f21, .f22, .f23, .f24 {
+    display: none;
+}
+
+
+

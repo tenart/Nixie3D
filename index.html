@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nixie3D</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/model.css">
+    </head>
+    <body>
+        <div id="gui">
+            <div id="info">
+                <p>Nixie3D was an experiment to see what I could make using CSS 3D transform and how far I could get with simply using CSS.</p>
+                <br>
+                <p>A Nixie tube, or cold cathode tube, displays numerical or alphabetical characters by applying power to speically shaped cathodes encased within a tube of neon gas and causing them to glow a bright orange color.</p>
+                <br>
+                <p>I find the look of Nixie tubes extremely fascinating and so I wanted to recreate them using pure CSS.</p>
+            </div>
+            <div id="button_tray">
+                <button id="about" class="button"><i class="fa fa-question"></i></button>
+                <button id="audio" class="button"><i class="fa fa-volume-off"></i></button>
+                <button id="center" class="button"><i class="fa fa-crosshairs"></i></button>
+            </div>
+        </div>
+            
+        <div id="wrap">
+            <div id="plane">
+                <div class="pair" id="hours">
+                    <div class="nixie" id="tube1">
+                        <div class="tube_wrap">
+                            <div class="bottom"></div>
+                            <div class="face f1"></div>
+                            <div class="face f2"></div>
+                            <div class="face f3"></div>
+                            <div class="face f4"></div>
+                            <div class="face f5"></div>
+                            <div class="face f6"></div>
+                            <div class="face f7"></div>
+                            <div class="face f8"></div>
+                            <div class="face f9"></div>
+                            <div class="face f10"></div>
+                            <div class="face f11"></div>
+                            <div class="face f12"></div>
+                            <div class="face f13"></div>
+                            <div class="face f14"></div>
+                            <div class="face f15"></div>
+                            <div class="face f16"></div>
+                            <div class="face f17"></div>
+                            <div class="face f18"></div>
+                            <div class="face f19"></div>
+                            <div class="face f20"></div>
+                            <div class="face f21"></div>
+                            <div class="face f22"></div>
+                            <div class="face f23"></div>
+                            <div class="face f24"></div>
+                        </div>
+                        <div class="numbers_wrap">
+                            <div data-num="0" class="number _0"></div>
+                            <div data-num="1" class="number _1"></div>
+                            <div data-num="2" class="number _2"></div>
+                            <div data-num="3" class="number _3"></div>
+                            <div data-num="4" class="number _4"></div>
+                            <div data-num="5" class="number _5"></div>
+                            <div data-num="6" class="number _6"></div>
+                            <div data-num="7" class="number _7"></div>
+                            <div data-num="8" class="number _8 glow"></div>
+                            <div data-num="0" class="number _9"></div>      
+                        </div>
+                        <div class="anode a2"></div>
+                        <div class="anode a1"></div>
+                        <div class="ray r1"></div>
+                        <div class="ray r2"></div>
+                    </div>
+                    <div class="nixie" id="tube2">
+                        <div class="tube_wrap">
+                            <div class="bottom"></div>
+                            <div class="face f1"></div>
+                            <div class="face f2"></div>
+                            <div class="face f3"></div>
+                            <div class="face f4"></div>
+                            <div class="face f5"></div>
+                            <div class="face f6"></div>
+                            <div class="face f7"></div>
+                            <div class="face f8"></div>
+                            <div class="face f9"></div>
+                            <div class="face f10"></div>
+                            <div class="face f11"></div>
+                            <div class="face f12"></div>
+                            <div class="face f13"></div>
+                            <div class="face f14"></div>
+                            <div class="face f15"></div>
+                            <div class="face f16"></div>
+                            <div class="face f17"></div>
+                            <div class="face f18"></div>
+                            <div class="face f19"></div>
+                            <div class="face f20"></div>
+                            <div class="face f21"></div>
+                            <div class="face f22"></div>
+                            <div class="face f23"></div>
+                            <div class="face f24"></div>
+                        </div>
+                        <div class="numbers_wrap">
+                            <div data-num="0" class="number _0"></div>
+                            <div data-num="1" class="number _1"></div>
+                            <div data-num="2" class="number _2"></div>
+                            <div data-num="3" class="number _3"></div>
+                            <div data-num="4" class="number _4"></div>
+                            <div data-num="5" class="number _5"></div>
+                            <div data-num="6" class="number _6"></div>
+                            <div data-num="7" class="number _7"></div>
+                            <div data-num="8" class="number _8 glow"></div>
+                            <div data-num="0" class="number _9"></div>      
+                        </div>
+                        <div class="anode a2"></div>
+                        <div class="anode a1"></div>
+                        <div class="ray r1"></div>
+                        <div class="ray r2"></div>
+                    </div>
+                </div>
+                <div class="pair" id="minutes">
+                    <div class="nixie" id="tube3">
+                        <div class="tube_wrap">
+                            <div class="bottom"></div>
+                            <div class="face f1"></div>
+                            <div class="face f2"></div>
+                            <div class="face f3"></div>
+                            <div class="face f4"></div>
+                            <div class="face f5"></div>
+                            <div class="face f6"></div>
+                            <div class="face f7"></div>
+                            <div class="face f8"></div>
+                            <div class="face f9"></div>
+                            <div class="face f10"></div>
+                            <div class="face f11"></div>
+                            <div class="face f12"></div>
+                            <div class="face f13"></div>
+                            <div class="face f14"></div>
+                            <div class="face f15"></div>
+                            <div class="face f16"></div>
+                            <div class="face f17"></div>
+                            <div class="face f18"></div>
+                            <div class="face f19"></div>
+                            <div class="face f20"></div>
+                            <div class="face f21"></div>
+                            <div class="face f22"></div>
+                            <div class="face f23"></div>
+                            <div class="face f24"></div>
+                        </div>
+                        <div class="numbers_wrap">
+                            <div data-num="0" class="number _0"></div>
+                            <div data-num="1" class="number _1"></div>
+                            <div data-num="2" class="number _2"></div>
+                            <div data-num="3" class="number _3"></div>
+                            <div data-num="4" class="number _4"></div>
+                            <div data-num="5" class="number _5"></div>
+                            <div data-num="6" class="number _6"></div>
+                            <div data-num="7" class="number _7"></div>
+                            <div data-num="8" class="number _8 glow"></div>
+                            <div data-num="0" class="number _9"></div>      
+                        </div>
+                        <div class="anode a2"></div>
+                        <div class="anode a1"></div>
+                        <div class="ray r1"></div>
+                        <div class="ray r2"></div>
+                    </div>
+                    <div class="nixie" id="tube4">
+                        <div class="tube_wrap">
+                            <div class="bottom"></div>
+                            <div class="face f1"></div>
+                            <div class="face f2"></div>
+                            <div class="face f3"></div>
+                            <div class="face f4"></div>
+                            <div class="face f5"></div>
+                            <div class="face f6"></div>
+                            <div class="face f7"></div>
+                            <div class="face f8"></div>
+                            <div class="face f9"></div>
+                            <div class="face f10"></div>
+                            <div class="face f11"></div>
+                            <div class="face f12"></div>
+                            <div class="face f13"></div>
+                            <div class="face f14"></div>
+                            <div class="face f15"></div>
+                            <div class="face f16"></div>
+                            <div class="face f17"></div>
+                            <div class="face f18"></div>
+                            <div class="face f19"></div>
+                            <div class="face f20"></div>
+                            <div class="face f21"></div>
+                            <div class="face f22"></div>
+                            <div class="face f23"></div>
+                            <div class="face f24"></div>
+                        </div>
+                        <div class="numbers_wrap">
+                            <div data-num="0" class="number _0"></div>
+                            <div data-num="1" class="number _1"></div>
+                            <div data-num="2" class="number _2"></div>
+                            <div data-num="3" class="number _3"></div>
+                            <div data-num="4" class="number _4"></div>
+                            <div data-num="5" class="number _5"></div>
+                            <div data-num="6" class="number _6"></div>
+                            <div data-num="7" class="number _7"></div>
+                            <div data-num="8" class="number _8 glow"></div>
+                            <div data-num="0" class="number _9"></div>      
+                        </div>
+                        <div class="anode a2"></div>
+                        <div class="anode a1"></div>
+                        <div class="ray r1"></div>
+                        <div class="ray r2"></div>
+                    </div>
+                </div>
+                <div class="pair" id="seconds">
+                    <div class="nixie" id="tube5">
+                        <div class="tube_wrap">
+                            <div class="bottom"></div>
+                            <div class="face f1"></div>
+                            <div class="face f2"></div>
+                            <div class="face f3"></div>
+                            <div class="face f4"></div>
+                            <div class="face f5"></div>
+                            <div class="face f6"></div>
+                            <div class="face f7"></div>
+                            <div class="face f8"></div>
+                            <div class="face f9"></div>
+                            <div class="face f10"></div>
+                            <div class="face f11"></div>
+                            <div class="face f12"></div>
+                            <div class="face f13"></div>
+                            <div class="face f14"></div>
+                            <div class="face f15"></div>
+                            <div class="face f16"></div>
+                            <div class="face f17"></div>
+                            <div class="face f18"></div>
+                            <div class="face f19"></div>
+                            <div class="face f20"></div>
+                            <div class="face f21"></div>
+                            <div class="face f22"></div>
+                            <div class="face f23"></div>
+                            <div class="face f24"></div>
+                        </div>
+                        <div class="numbers_wrap">
+                            <div data-num="0" class="number _0"></div>
+                            <div data-num="1" class="number _1"></div>
+                            <div data-num="2" class="number _2"></div>
+                            <div data-num="3" class="number _3"></div>
+                            <div data-num="4" class="number _4"></div>
+                            <div data-num="5" class="number _5"></div>
+                            <div data-num="6" class="number _6"></div>
+                            <div data-num="7" class="number _7"></div>
+                            <div data-num="8" class="number _8 glow"></div>
+                            <div data-num="0" class="number _9"></div>      
+                        </div>
+                        <div class="anode a2"></div>
+                        <div class="anode a1"></div>
+                        <div class="ray r1"></div>
+                        <div class="ray r2"></div>
+                    </div>
+                    <div class="nixie" id="tube6">
+                        <div class="tube_wrap">
+                            <div class="bottom"></div>
+                            <div class="face f1"></div>
+                            <div class="face f2"></div>
+                            <div class="face f3"></div>
+                            <div class="face f4"></div>
+                            <div class="face f5"></div>
+                            <div class="face f6"></div>
+                            <div class="face f7"></div>
+                            <div class="face f8"></div>
+                            <div class="face f9"></div>
+                            <div class="face f10"></div>
+                            <div class="face f11"></div>
+                            <div class="face f12"></div>
+                            <div class="face f13"></div>
+                            <div class="face f14"></div>
+                            <div class="face f15"></div>
+                            <div class="face f16"></div>
+                            <div class="face f17"></div>
+                            <div class="face f18"></div>
+                            <div class="face f19"></div>
+                            <div class="face f20"></div>
+                            <div class="face f21"></div>
+                            <div class="face f22"></div>
+                            <div class="face f23"></div>
+                            <div class="face f24"></div>
+                        </div>
+                        <div class="numbers_wrap">
+                            <div data-num="0" class="number _0"></div>
+                            <div data-num="1" class="number _1"></div>
+                            <div data-num="2" class="number _2"></div>
+                            <div data-num="3" class="number _3"></div>
+                            <div data-num="4" class="number _4"></div>
+                            <div data-num="5" class="number _5"></div>
+                            <div data-num="6" class="number _6"></div>
+                            <div data-num="7" class="number _7"></div>
+                            <div data-num="8" class="number _8 glow"></div>
+                            <div data-num="0" class="number _9"></div>      
+                        </div>
+                        <div class="anode a2"></div>
+                        <div class="anode a1"></div>
+                        <div class="ray r1"></div>
+                        <div class="ray r2"></div>
+                    </div>
+                </div>
+                <div id="front"></div>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.3/howler.core.min.js"></script>
+    <script src="https://use.fontawesome.com/442abb327b.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/script.js"></script>
+</html>
