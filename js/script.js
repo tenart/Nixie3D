@@ -57,7 +57,7 @@ $(function() {
     })
     
     $("#center").click(function() {
-        orbit.vdeg = 0;
+        orbit.vdeg = -10;
         orbit.hdeg = 0;
     })
     
