@@ -29,7 +29,7 @@ $(function() {
         xdir: "",
         ydir: "",
         hdeg: 0,
-        vdeg: 0,
+        vdeg: -10,
         hspeed: 0,
         vspeed: 0,
         sensitivity: 0.5,
@@ -67,14 +67,44 @@ $(function() {
         orbit.zoom += delta;
     })
     
-    $(document).mousedown(function() {
+    $(document).bind('touchstart mousedown', function(e) {
+        e.preventDefault();
         cursor.down = true;
     })
 
-    $(document).mouseup(function() {
+    $(document).bind('touchend mouseup', function(e) {
+        e.preventDefault();
         cursor.down = false;
     })
     
+    $('body').bind('touchmove mousemove', function(e) {
+        e.preventDefault();
+        var relX = e.pageX;
+        var relY = e.pageY;
+
+        if( cursor.down ) {
+            
+            if( relX > orbit.x ) {
+                orbit.xdir = "+";
+            } else if( relX < orbit.x ){
+                orbit.xdir = "-";
+            }
+
+            if( relY > orbit.y ) {
+                orbit.ydir = "-";
+            } else if( relY < orbit.y ){
+                orbit.ydir = "+";
+            }
+
+            orbit.hspeed = Math.abs(relX - orbit.x);
+            orbit.vspeed = Math.abs(relY - orbit.y);
+        }
+        
+        orbit.x = relX;
+        orbit.y = relY;
+    });
+    
+    /*
     $("body").mousemove(function(e) {
 
         var relX = e.pageX;
@@ -101,6 +131,7 @@ $(function() {
         orbit.x = relX;
         orbit.y = relY;
     })
+    */
     
     var currentTime = updateTime();
     
